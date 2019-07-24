@@ -1,0 +1,16 @@
+server:
+  port: 8001
+logging.file: logs/application.log
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
+      hibernate: ERROR
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:todoList
+  h2:
+    console:
+      enabled: true
